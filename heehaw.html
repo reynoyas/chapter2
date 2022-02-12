@@ -5,18 +5,12 @@
     <title>Hee Haw</title>
 </head>
 <body>
-<script>
-    let num = 1;
-    while(num <= 100){
-        if(num%3 == 0){
-            document.write("Hee! <br>");
-        } else if(num%5 == 0){
-            document.write("Haw! <br>");
-        }else{
-            document.write(num + "<br>");
-        }
-        num++;
-    }
-</script>
+<h1>Number of Steps to Hee Haw!</h1><br>
+<p>Enter a number</p><input type="text" id="userNum">
+<button type="submit" onclick="heehaw()">Submit</button>
+<span id="err-num" class="err-num">Positive numbers only</span>
+<span id="err-num2" class="err-num2">Please enter a positive number</span>
+
+<script src="heehaw.js"></script>
 </body>
 </html>
